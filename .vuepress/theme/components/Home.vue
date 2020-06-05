@@ -90,7 +90,7 @@
                     </RouterLink>
                 </div>
                 <p>
-                    There are many complete genomes (over 1,000 in <a href="https://www.gisaid.org/">GISAID</a>) but
+                    There are many complete genomes but
                     only a handful of raw sequencing read datasets. We provide lists of raw read accessions for
                     <a
                         href="https://github.com/galaxyproject/SARS-CoV-2/blob/master/genomics/4-Variation/current_illumina.txt"
@@ -101,16 +101,15 @@
                         href="https://github.com/galaxyproject/SARS-CoV-2/blob/master/genomics/4-Variation/current_gridion.txt"
                         >ONT</a
                     >. These lists are updated daily.
-                    <strong>There are 397 sites showing intra-host variation across 33 samples (with frequencies between 5% and
-                    95%).</strong> Twenty nine samples have fixed differences at 39 sites from the
-                    <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_045512">published reference</a>.
+                    <strong>There are 4,899 distinct variable sites showing intra-host variation across 1,093 samples (with frequencies between 5% and
+                    100%) from 28 studies representing 24 geographic locations.</strong> 
                     <a
                         href="https://github.com/galaxyproject/SARS-CoV-2/blob/master/genomics/4-Variation/variant_list.05.tsv"
                         >Variant lists</a
                     >
                     and
                     <a href="https://github.com/galaxyproject/SARS-CoV-2/tree/master/genomics/4-Variation">VCF files</a>
-                    are updated daily. Intra-host polymorphisms may reveal
+                    are updated as new data comes in. Intra-host polymorphisms may reveal
                     <RouterLink :to="'/genomics/5-S-analysis/'">sites</RouterLink> affecting the pathogenicity of the
                     virus.
                 </p>
@@ -151,13 +150,13 @@
             </div>
         </div>
 
-        <h2>Project Video Update</h2>
+        <h2>Project Video Introduction</h2>
         <iframe
-            src="https://player.vimeo.com/video/400035951"
             width="960"
             height="540"
+            src="https://www.youtube.com/embed/UKg9kpyQbzI"
             frameborder="0"
-            allow="autoplay; fullscreen"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
         ></iframe>
         <Content class="theme-default-content custom" />

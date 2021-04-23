@@ -7,6 +7,7 @@ module.exports = {
     },
     themeConfig: {
         repo: "galaxyproject/SARS-CoV-2",
+        repoLabel: "Edit on GitHub",
         nav: [
             {
                 text: "Genomics",
@@ -16,22 +17,36 @@ module.exports = {
                 text: "Cheminformatics",
                 link: "/cheminformatics/"
             },
-            {
+            /*{
                 text: "Evolution",
                 link: "/evolution/"
+            },
+            {
+                text: "Direct RNAseq",
+                link: "/direct-rnaseq/"
+            },*/
+            {
+                text: "Proteomics",
+                link: "/proteomics/"
+            },
+            /*{
+                text: "Artic",
+                link: "/artic/"
+            },*/
+            {
+                text: "Data",
+                link: "/data/"
+            },
+            {
+                text: "Webinars",
+                link: "/webinars/"
             }
         ],
         sidebar: {
             "/genomics/": [
-                "/genomics/",
-                "/genomics/1-PreProcessing/",
-                "/genomics/2-Assembly/",
-                "/genomics/3-MRCA/",
-                "/genomics/4-Variation/",
-                "/genomics/5-S-analysis/",
-                "/genomics/6-RecombinationSelection/",
-                "/genomics/updates/",
-                "/genomics/deploy/"
+                //"/genomics/",
+                "/genomics/global_platform/",
+                "/genomics/no-more-business-as-usual/",
             ],
             "/cheminformatics/": [
                 "/cheminformatics/",
@@ -46,8 +61,35 @@ module.exports = {
             "/evolution/": [
                 "/evolution/",
                 "/evolution/1-DiversityDivergence",
-            ]
-
+            ],
+            "/direct-rnaseq/": [
+                "/direct-rnaseq/",
+                "/direct-rnaseq/1-preprocessing/",
+                "/direct-rnaseq/2-epigenetics/",
+            ],
+            "/proteomics/": [
+                "/proteomics/",
+                "/proteomics/PXD018117/",
+                "/proteomics/PXD018241/",
+                "/proteomics/PXD018594/",
+                "/proteomics/PXD018804/",
+                "/proteomics/PXD019423/",
+                "/proteomics/PXD020394/",
+                "/proteomics/PXD021328/",
+                "/proteomics/mPXD019423/",
+                "/proteomics/mPXD020394/",
+                "/proteomics/mPXD021328/",
+            ],
+            "/artic/": [
+                "/artic/",
+            ],
+            "/data/": [
+                "/data/",
+                "/data/gisaid/",
+            ],
+            "/webinars/": [
+                "/webinars/",
+            ],
         },
         sidebarDepth: 3,
         displayAllHeaders: true,
